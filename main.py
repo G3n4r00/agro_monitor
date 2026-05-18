@@ -17,7 +17,13 @@ import time
 import pandas as pd
 from flask import Flask, jsonify, render_template_string, request
 
-from gerador import gerar_leitura_forcada, gerar_leitura_normal, salvar_no_csv, set_lock
+from gerador import (
+    gerar_csv_inicial,
+    gerar_leitura_forcada,
+    gerar_leitura_normal,
+    salvar_no_csv,
+    set_lock
+)
 from regras import MotorDeRegras
 
 # ---------------------------------------------------------------------------
@@ -900,6 +906,9 @@ if __name__ == "__main__":
     print("🌱 Iniciando sistema de monitoramento agrícola...")
     print("📊 Dashboard disponível em: http://localhost:5000")
     print("⏱  Gerando dados a cada 5 segundos automaticamente")
+
+    # Gera CSV inicial com 50 linhas
+    gerar_csv_inicial(50, CSV_PATH)
 
     t = threading.Thread(target=loop_geracao, daemon=True)
     t.start()

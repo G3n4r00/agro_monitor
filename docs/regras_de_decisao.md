@@ -12,7 +12,7 @@ As seguintes variáveis são lidas do arquivo `dados/leituras.csv` e alimentam d
 
 | Variável | Tipo | Faixa de Valores | Descrição |
 |---|---|---|---|
-| `timestamp` | string (ISO 8601) | data/hora da leitura | Momento em que o sensor registrou os dados |
+| `timestamp` | string | data/hora da leitura | Momento em que o sensor registrou os dados |
 | `talhao_id` | inteiro | 1 – 8 | Identificador do talhão monitorado |
 | `perc_folhas_doentes` | float | 5.0 – 25.0 (normal) / até 80.0 (forçado) | Percentual de folhas com sintomas de doença |
 | `praga_detectada` | string | `nenhuma`, `pulgão`, `lagarta`, `ácaro` | Tipo de praga identificada pelo sensor |
@@ -178,6 +178,6 @@ LOOP a cada 5 segundos:
 
 | Nível | Cor no Dashboard | Regra Associada | Ação Recomendada |
 |---|---|---|---|
-| **CRÍTICO** | Vermelho (`#ef4444`) | Infestação | Aplicar defensivo agrícola, isolar o talhão e acionar equipe de campo imediatamente |
-| **ATENÇÃO** | Amarelo (`#f59e0b`) | Irrigação | Acionar irrigação suplementar e verificar linhas de gotejamento e sensores de umidade |
-| **AVISO** | Azul (`#3b82f6`) | Temperatura | Avaliar irrigação noturna ou sombreamento (calor) / cobertura protetora contra geada (frio) |
+| **CRÍTICO** | Vermelho | Infestação | Aplicar defensivo agrícola, isolar o talhão e acionar equipe de campo imediatamente |
+| **ATENÇÃO** | Amarelo | Irrigação | Acionar irrigação suplementar e verificar linhas de gotejamento e sensores de umidade |
+| **AVISO** | Azul | Temperatura | Avaliar irrigação noturna ou sombreamento (calor) / cobertura protetora contra geada (frio) |

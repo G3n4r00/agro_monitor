@@ -123,3 +123,38 @@ Projeto entregue como atividade de automação agrícola, atendendo aos três re
 1. **Lógica de Decisão** — `regras.py` implementa três regras com operadores booleanos AND e OR aplicados sobre DataFrame pandas
 2. **Automação** — `main.py` dispara ações (alertas, registros, notificações simuladas) de forma autônoma a cada ciclo da thread, sem intervenção humana
 3. **Integração com Dados** — `gerador.py` produz os dados de entrada e os persiste em `dados/leituras.csv`; o motor de regras os lê e avalia a cada iteração
+
+### Time
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>RM</th>
+    <th>Turma</th>
+  </tr>
+  <tr>
+    <td>Gabriel Genaro Dalaqua</td>
+    <td>551986</td>
+    <td>4ESOA</td>
+  </tr>
+  <tr>
+    <td>Alairton Rocha Scabelli </td>
+    <td>551454</td>
+    <td>4ESOA</td>
+  </tr>
+  <tr>
+    <td>Carolina Nascimento Amorim</td>
+    <td>97930</td>
+    <td>4ESOA</td>
+  </tr>
+  <tr>
+    <td>Eduardo Marins</td>
+    <td>551892</td>
+    <td>4ESOA</td>
+  </tr>
+  <tr>
+    <td>Sarah Ribeiro da Silva</td>
+    <td>97747</td>
+    <td>4ESOA</td>
+  </tr>
+</table>

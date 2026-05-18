@@ -88,6 +88,27 @@ def gerar_leitura_forcada(tipo_alerta: str) -> dict:
 
     return leitura
 
+def gerar_csv_inicial(qtd_linhas: int = 50, caminho: str = "dados/leituras.csv") -> None:
+    """
+    Gera um CSV inicial com várias leituras simuladas.
+    Mistura leituras normais e leituras com alertas.
+    """
+
+    tipos_alerta = ["infestacao", "irrigacao", "temperatura"]
+
+    # Remove o arquivo antigo para recriar do zero
+    if os.path.exists(caminho):
+        os.remove(caminho)
+
+    for i in range(qtd_linhas):
+
+        # Aproximadamente 20% das linhas terão alertas forçados
+        if random.random() < 0.2:
+            leitura = gerar_leitura_forcada(random.choice(tipos_alerta))
+        else:
+            leitura = gerar_leitura_normal()
+
+        salvar_no_csv(leitura, caminho)
 
 def salvar_no_csv(leitura: dict, caminho: str = "dados/leituras.csv") -> None:
     """
@@ -105,3 +126,4 @@ def salvar_no_csv(leitura: dict, caminho: str = "dados/leituras.csv") -> None:
             if arquivo_novo:
                 writer.writeheader()
             writer.writerow({k: leitura[k] for k in campos})
+
