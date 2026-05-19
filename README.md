@@ -11,7 +11,8 @@
 
 ## Visão Geral
 
-Projeto desenvolvido como atividade acadêmica de automação agrícola (FIAP). O sistema simula uma rede de sensores distribuídos em talhões de uma propriedade rural: uma thread em background gera leituras realistas a cada 5 segundos e as persiste em CSV; um motor de regras com lógica booleana avalia continuamente os dados e produz alertas classificados por nível de severidade; e um servidor Flask expõe um dashboard web que se atualiza automaticamente a cada 3 segundos, sem necessidade de recarregar a página.
+Projeto desenvolvido como atividade acadêmica de automação agrícola. 
+O sistema simula uma rede de sensores distribuídos em talhões de uma propriedade rural: uma thread em background gera leituras realistas a cada 5 segundos e as persiste em CSV; um motor de regras com lógica booleana avalia continuamente os dados e produz alertas classificados por nível de severidade; e um servidor Flask expõe um dashboard web que se atualiza automaticamente a cada 5 segundos, sem necessidade de recarregar a página.
 
 ---
 

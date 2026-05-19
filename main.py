@@ -686,7 +686,6 @@ HTML = """<!DOCTYPE html>
 '  </div>\\n' +
 '  <div class="secao secao-rec"><h3>&#128203; Recomendações de Ação</h3><ol>' + liRec + '</ol></div>\\n' +
 '  <div class="secao secao-acoes"><h3>&#9881;&#65039; Ações Automáticas Realizadas pelo Sistema</h3><ul>' + liAcoes + '</ul></div>\\n' +
-'  <div class="rodape">Este relatório foi gerado automaticamente pelo Sistema de Monitoramento Agrícola.</div>\\n' +
 '</div>\\n' +
 '</body>\\n' +
 '</html>';
